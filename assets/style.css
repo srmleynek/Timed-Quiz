@@ -1,3 +1,78 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+:root {
+    --hue-neutral: white;
+    --hue-button: #330066;
+    --hue-buttonHover: purple;
+}
+
+header, p {
+    color: var(--hue-buttonHover)
+    font-size: 16px;
+}
+
 body {
-    background-color:brown;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--hue-neutral);
+}
+
+.container {
+    width: 800px;
+    max-width: 80%;
+    background-color: var(--hue-neutral);
+    padding: 10px;
+}
+
+.btn-list {
+    display: grid;
+    gap: 10px;
+    margin: 20px 350px 20px 0;
+}
+
+.btn {
+    background-color: var(--hue-button);
+    border-radius: 5px;
+    text-align: left;
+    color: var(--hue-neutral);
+    height: 35px;
+    font-size: 20px;
+}
+
+.btn:hover {
+    background-color: var(--hue-buttonHover)
+}
+
+#question {
+    font-size: 45px;
+}
+
+.controls {
+    display: flex, grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.hide {
+    display: none;
+}
+
+.start-btn, .next-btn {
+    font-size: 1.5rem;
+}
+
+.start-btn:hover {
+    background-color: var(--hue-buttonHover)
+}
+
+.start-btn:hover {
+    background-color: var(--hue-buttonHover)
 }
