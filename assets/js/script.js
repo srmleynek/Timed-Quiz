@@ -5,6 +5,23 @@ const questionContainerElement = document.getElementById('question-container')
 const questionElement = document.getElementById('question')
 const answerButtonsElement = document.getElementById('answer-buttons')
 
+startButton.addEventListener('click', startGame)
+nextButton.addEventListener('click', () => {
+  currentQuestionIndex++
+  setNextQuestion()
+})
+
+function startGame() {
+
+}
+
+function setNextQuestion() {
+
+}
+
+function selectAnswer() {
+
+}
 const questions = [
     {
       question: 'Commonly used data types DO Not include:',
